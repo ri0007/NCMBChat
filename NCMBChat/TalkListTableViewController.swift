@@ -13,7 +13,7 @@ import NCMB
 class TalkListTableViewController: UITableViewController {
 
     var members = [NCMBUser]()
-    var newMember: NCMBUser? = nil
+    var newMember: NCMBUser?
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -25,11 +25,11 @@ class ViewController: UIViewController {
     }
 
     @IBAction func clickedButton(sender: UIButton) {
-        loginWithBlock(nameField.text!, password: passField.text!, block: { (error, user) in
+        Login.loginWithBlock(nameField.text!, password: passField.text!, block: { (error, user) in
             guard error == nil else {
                 print("Login not Succeed")
                 
-                self.signInWithBlock(self.nameField.text!, password: self.passField.text!, block: { (error) in
+                Login.signInWithBlock(self.nameField.text!, password: self.passField.text!, block: { (error) in
                     guard error == nil else {
                         print("SignIn not Succeed")
                         return
@@ -49,34 +49,6 @@ class ViewController: UIViewController {
     
     func succeedLoginOrSignin() {
         performSegueWithIdentifier("TalkSelect", sender: self)
-    }
-
-    func signInWithBlock(userName: String, password: String, block:((NSError!)->Void)!) {
-        let user = NCMBUser()
-        user.userName = userName
-        user.password = password
-        
-        user.signUpInBackgroundWithBlock { (error) -> Void in
-            guard error == nil else {
-                print(error)
-                block?(error)
-                return
-            }
-            
-            block?(nil)
-        }
-    }
-    
-    func loginWithBlock(userName: String, password: String, block:((NSError!, NCMBUser!)->Void)!) {
-        NCMBUser.logInWithUsernameInBackground(userName, password: password, block: { (user, error) in
-            guard error == nil else {
-                print(error)
-                block?(error, nil)
-                return
-            }
-            
-            block?(nil, user)
-        })
     }
 }
 

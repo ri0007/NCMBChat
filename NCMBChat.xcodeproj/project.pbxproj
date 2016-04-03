@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F6FDD8D1CB107DE00DC2909 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6FDD8C1CB107DE00DC2909 /* Login.swift */; };
 		0F9485951C97881200BB859B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9485941C97881200BB859B /* AppDelegate.swift */; };
 		0F9485971C97881200BB859B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9485961C97881200BB859B /* ViewController.swift */; };
 		0F94859A1C97881200BB859B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F9485981C97881200BB859B /* Main.storyboard */; };
@@ -41,6 +42,7 @@
 
 /* Begin PBXFileReference section */
 		018F02D7129BA151B30A3A88 /* Pods-NCMBChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NCMBChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NCMBChat/Pods-NCMBChat.debug.xcconfig"; sourceTree = "<group>"; };
+		0F6FDD8C1CB107DE00DC2909 /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		0F9485911C97881200BB859B /* NCMBChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NCMBChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F9485941C97881200BB859B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0F9485961C97881200BB859B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 			children = (
 				0F9485941C97881200BB859B /* AppDelegate.swift */,
 				0F9485961C97881200BB859B /* ViewController.swift */,
+				0F6FDD8C1CB107DE00DC2909 /* Login.swift */,
 				0F9485CA1C97FE8300BB859B /* NewMemberViewController.swift */,
 				0F9485C41C97C92D00BB859B /* TalkListTableViewController.swift */,
 				0F9485C61C97C99E00BB859B /* TalkViewController.swift */,
@@ -353,6 +356,7 @@
 				0F9485CB1C97FE8300BB859B /* NewMemberViewController.swift in Sources */,
 				0F9485951C97881200BB859B /* AppDelegate.swift in Sources */,
 				0F9485C71C97C99E00BB859B /* TalkViewController.swift in Sources */,
+				0F6FDD8D1CB107DE00DC2909 /* Login.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

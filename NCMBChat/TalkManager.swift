@@ -23,7 +23,7 @@ class TalkManager: NSObject {
     var receiverDisplayName = ""
     
     var timer:NSTimer!
-    
+
     var isFetchAutomatically = false {
         didSet {
             if isFetchAutomatically {
