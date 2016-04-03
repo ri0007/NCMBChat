@@ -31,7 +31,7 @@ class TalkViewController: JSQMessagesViewController, TalkManagerDelegate {
         
         manager.delegate = self
         manager.isFetchAutomatically = true
-        
+    
         setupBubbles()
         
         inputToolbar?.contentView?.leftBarButtonItemWidth = 0.0
